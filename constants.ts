@@ -109,13 +109,13 @@ export const EDUCATION_DATA: Education[] = [
   {
     degree: 'Master of Computer Applications (MCA)',
     institution: 'University of Calicut',
-    period: '2021 - 2023',
+    period: '2025',
     description: 'Focused on advanced software engineering principles, database management, and system design, strengthening my analytical and problem-solving skills.',
   },
   {
     degree: 'Bachelor of Science (B.Sc.) in Mathematics',
     institution: 'University of Calicut',
-    period: '2018 - 2021',
+    period: '2023',
     description: 'My strong mathematical background helps me approach programming with logic, structure, and precision.',
   },
 ];
