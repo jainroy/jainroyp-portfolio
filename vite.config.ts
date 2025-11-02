@@ -6,7 +6,7 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, '.', '');
 
   return {
-    base: '/jainroyp-portfolio/', // 👈 ADD THIS LINE
+    base: '/jainroyp-portfolio/', // 👈 VERY IMPORTANT
     server: {
       port: 3000,
       host: '0.0.0.0',
