@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { NAV_LINKS } from '../constants';
 import { FiMenu, FiX, FiSun, FiMoon } from 'react-icons/fi';
 import { motion } from 'framer-motion';
+import { handleNavClick } from '../utils';
 
 interface HeaderProps {
   theme: string;
@@ -20,34 +21,12 @@ const Header: React.FC<HeaderProps> = ({ theme, toggleTheme }) => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
-    e.preventDefault();
-    const targetId = href.substring(1);
-    const targetElement = document.getElementById(targetId);
-
-    if (targetElement) {
-      const headerOffset = 80; // Offset for the sticky header height
-      const elementPosition = targetElement.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth'
-      });
-
-      if (isOpen) {
-        setIsOpen(false);
-      }
-    }
-  };
-
-
   return (
     <header className={`sticky top-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-light-card/80 dark:bg-dark-card/80 backdrop-blur-lg shadow-md' : 'bg-transparent'}`}>
       <div className="container mx-auto flex justify-between items-center p-4">
         <motion.a 
           href="#home" 
-          onClick={(e) => handleNavClick(e, '#home')}
+          onClick={(e) => handleNavClick(e, '#home', () => setIsOpen(false))}
           className="text-2xl font-bold text-light-accent dark:text-dark-accent cursor-pointer"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
@@ -90,7 +69,7 @@ const Header: React.FC<HeaderProps> = ({ theme, toggleTheme }) => {
               <a 
                 key={link.name} 
                 href={link.href} 
-                onClick={(e) => handleNavClick(e, link.href)} 
+                onClick={(e) => handleNavClick(e, link.href, () => setIsOpen(false))} 
                 className="py-2 text-lg font-medium hover:text-light-accent dark:hover:text-dark-accent transition-colors cursor-pointer"
               >
                 {link.name}

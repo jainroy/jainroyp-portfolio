@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaLinkedin } from 'react-icons/fa';
+import { handleNavClick } from '../utils';
 
 const Hero: React.FC = () => {
   const headline = "Hi, I’m Jain Roy — a Python/Django Backend Developer passionate about building secure, scalable web applications.";
@@ -24,24 +25,6 @@ const Hero: React.FC = () => {
     },
   };
 
-  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
-    e.preventDefault();
-    const targetId = href.substring(1);
-    const targetElement = document.getElementById(targetId);
-
-    if (targetElement) {
-      const headerOffset = 80; // Offset for the sticky header height
-      const elementPosition = targetElement.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth'
-      });
-    }
-  };
-
-
   return (
     <section id="home" className="min-h-screen flex flex-col justify-center items-center text-center">
       <motion.h1 
@@ -51,7 +34,8 @@ const Hero: React.FC = () => {
         animate="visible"
       >
         {headline.split("").map((char, index) => {
-          const isNamePart = index >= 9 && index < 17; // "Jain Roy"
+          // "Hi, I’m " is 8 chars. "Jain Roy" starts at index 8 and ends at 15.
+          const isNamePart = index >= 8 && index < 16; 
           return (
             <motion.span
               key={char + "-" + index}
