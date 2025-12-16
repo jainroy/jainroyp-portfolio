@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jain Roy P | Python & Django Backend Developer</title>
-    <meta name="description" content="Portfolio of Jain Roy P, a Python/Django Backend Developer specializing in building secure, scalable web applications with Django REST Framework, PostgreSQL, and more." />
-    <meta name="keywords" content="Jain Roy P, Python Developer, Django Developer, Backend Engineer, Portfolio, NthIndex Software Solutions" />
+    <title>Jain Roy P | Python Backend Developer | Django & REST APIs</title>
+    <meta name="description" content="Portfolio of Jain Roy P, a Python Backend Developer based in Thrissur, Kerala. Specializing in Django, REST APIs, and scalable web applications." />
+    <meta name="keywords" content="Jain Roy P, Python Developer, Django Developer, Backend Engineer, REST API, Portfolio, NthIndex Software Solutions, Thrissur" />
     <link rel="icon" type="image/svg+xml" href="./favicon.ico" />
 
     <!-- Fonts -->
@@ -112,24 +112,24 @@
                 <a href="#projects" class="text-base font-medium hover:text-light-accent dark:hover:text-dark-accent transition-colors">Projects</a>
                 <a href="#experience" class="text-base font-medium hover:text-light-accent dark:hover:text-dark-accent transition-colors">Experience</a>
                 <a href="#contact" class="text-base font-medium hover:text-light-accent dark:hover:text-dark-accent transition-colors">Contact</a>
-                <button id="theme-toggle" class="p-2 rounded-full hover:bg-light-border dark:hover:bg-dark-border transition-colors focus:outline-none">
+                <button id="theme-toggle" class="p-2 rounded-full hover:bg-light-border dark:hover:bg-dark-border transition-colors focus:outline-none" aria-label="Toggle Dark Mode">
                     <i class="fas fa-moon text-xl" id="theme-icon"></i>
                 </button>
             </nav>
 
             <!-- Mobile Nav Button -->
             <div class="md:hidden flex items-center">
-                <button id="theme-toggle-mobile" class="p-2 mr-2 rounded-full hover:bg-light-border dark:hover:bg-dark-border transition-colors">
+                <button id="theme-toggle-mobile" class="p-2 mr-2 rounded-full hover:bg-light-border dark:hover:bg-dark-border transition-colors" aria-label="Toggle Dark Mode">
                     <i class="fas fa-moon text-xl" id="theme-icon-mobile"></i>
                 </button>
-                <button id="menu-btn" class="z-50 p-2 focus:outline-none">
+                <button id="menu-btn" class="z-50 p-2 focus:outline-none" aria-label="Open Menu" aria-expanded="false">
                     <i class="fas fa-bars text-2xl"></i>
                 </button>
             </div>
         </div>
 
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-light-card dark:bg-dark-card shadow-lg py-4 md:hidden">
+        <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-light-card dark:bg-dark-card shadow-lg border-t border-light-border dark:border-dark-border py-4 md:hidden">
             <nav class="flex flex-col items-center space-y-4">
                 <a href="#about" class="mobile-link text-lg font-medium hover:text-light-accent dark:hover:text-dark-accent">About</a>
                 <a href="#skills" class="mobile-link text-lg font-medium hover:text-light-accent dark:hover:text-dark-accent">Skills</a>
@@ -145,18 +145,26 @@
         <!-- Hero Section -->
         <section id="home" class="min-h-screen flex flex-col justify-center items-center text-center -mt-20">
             <h1 class="text-4xl md:text-5xl font-bold mb-6 max-w-4xl reveal active">
-                Hi, I’m <span class="text-light-accent dark:text-dark-accent">Jain Roy</span> — a Python/Django Backend Developer passionate about building secure, scalable web applications.
+                Hi, I’m <span class="text-light-accent dark:text-dark-accent">Jain Roy</span> — a Python Backend Developer.
             </h1>
+            <p class="text-xl md:text-2xl font-medium text-gray-700 dark:text-gray-300 mb-4 reveal typing-cursor" style="transition-delay: 100ms;">
+                Django & REST APIs | Backend-Focused Full Stack
+            </p>
             <p class="text-md md:text-lg text-gray-600 dark:text-gray-400 mb-8 max-w-3xl reveal" style="transition-delay: 200ms;">
-                Currently working onsite at NthIndex Software Solutions, developing and maintaining real-world Django projects with REST APIs and modern backend practices.
+                Focused on building reliable, scalable web applications and integrating APIs with modern frontend interfaces. Based in Thrissur, Kerala.
             </p>
             <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 reveal" style="transition-delay: 400ms;">
-                <a href="#contact" class="px-8 py-3 bg-light-accent text-white font-semibold rounded-lg shadow-lg hover:bg-blue-600 dark:bg-dark-accent dark:hover:bg-blue-400 transition-all duration-300 transform hover:scale-105">
+                <a href="#contact" class="px-8 py-3 bg-light-accent text-white font-semibold rounded-lg shadow-lg hover:bg-blue-600 dark:bg-dark-accent dark:hover:bg-blue-500 transition-all duration-300 transform hover:scale-105">
                     Hire Me
                 </a>
                 <a href="https://linkedin.com/in/jainroyp" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center px-8 py-3 bg-light-card dark:bg-dark-card border border-light-border dark:border-dark-border font-semibold rounded-lg shadow-lg hover:bg-gray-100 dark:hover:bg-slate-700 transition-all duration-300 transform hover:scale-105">
                     <i class="fab fa-linkedin mr-2"></i> LinkedIn
                 </a>
+            </div>
+            <div class="mt-8 text-sm text-gray-500 dark:text-gray-400 reveal" style="transition-delay: 500ms;">
+                <span class="inline-block px-3 py-1 rounded-full bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300 font-medium">
+                    <i class="fas fa-circle text-[10px] mr-2 animate-pulse"></i> Open to Work
+                </span>
             </div>
         </section>
 
@@ -166,243 +174,147 @@
                 <h2 class="text-3xl md:text-4xl font-bold mb-4">About Me</h2>
                 <div class="w-24 h-1 bg-light-accent dark:bg-dark-accent mx-auto"></div>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 items-center">
-                <div class="md:col-span-1 flex justify-center reveal">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 items-start">
+                <div class="md:col-span-1 flex flex-col items-center reveal">
                     <img 
-                        src="/jainroyp-portfolio/assets/profile-E16_PQut.jpg" 
+                        src="/jainroyp-portfolio/assets/profile-CGGRE8ck.jpg" 
                         alt="Jain Roy P" 
-                        class="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover shadow-2xl border-4 border-light-accent/50 dark:border-dark-accent/50"
+                        class="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover shadow-2xl border-4 border-light-accent/50 dark:border-dark-accent/50 mb-6"
                         onerror="this.onerror=null; if(this.src.endsWith('profile.jpg')) this.src='./Profile.jpg'; else this.src='https://ui-avatars.com/api/?name=Jain+Roy+P&background=0D8ABC&color=fff&size=400';"
                     />
+                    <div class="bg-light-card dark:bg-dark-card p-4 rounded-lg shadow-md border border-light-border dark:border-dark-border w-full max-w-xs text-center">
+                        <h4 class="font-semibold mb-2">Languages</h4>
+                        <div class="flex justify-center space-x-2 text-sm text-gray-600 dark:text-gray-400">
+                            <span>English</span> <span class="text-light-accent dark:text-dark-accent">•</span>
+                            <span>Malayalam</span> <span class="text-light-accent dark:text-dark-accent">•</span>
+                            <span>Hindi</span>
+                        </div>
+                    </div>
                 </div>
                 <div class="md:col-span-2 text-left space-y-6 reveal" style="transition-delay: 200ms;">
                     <p class="text-lg leading-relaxed">
-                        I’m an MCA graduate and backend developer focused on creating efficient, production-grade Django applications. My work involves designing REST APIs, handling authentication, integrating payment systems, and collaborating closely with frontend teams.
+                        I am an MCA graduate (2025) and a Python Backend Developer with hands-on experience building RESTful web applications using Django and Django REST Framework. I have completed a structured internship at NthIndex Software Solutions, where I worked on real backend modules, API integrations, and production-level features.
                     </p>
                     <p class="text-lg leading-relaxed">
-                        I enjoy learning modern backend technologies like DRF, FastAPI, and AWS, continuously improving to become an industry-ready backend engineer.
+                        My core strengths include REST API design, authentication systems, database modeling with PostgreSQL, third-party integrations (Razorpay, Firebase), and clean backend architecture. I have collaborated with frontend teams to integrate APIs, debug issues, and deliver stable features.
                     </p>
-                    <div>
-                        <h3 class="text-xl font-semibold mb-4">Core Competencies:</h3>
-                        <ul class="grid grid-cols-2 sm:grid-cols-3 gap-2">
-                            <li class="flex items-center"><i class="fas fa-check-circle text-light-accent dark:text-dark-accent mr-2"></i> Problem-solving</li>
-                            <li class="flex items-center"><i class="fas fa-check-circle text-light-accent dark:text-dark-accent mr-2"></i> Debugging</li>
-                            <li class="flex items-center"><i class="fas fa-check-circle text-light-accent dark:text-dark-accent mr-2"></i> Adaptability</li>
-                            <li class="flex items-center"><i class="fas fa-check-circle text-light-accent dark:text-dark-accent mr-2"></i> Teamwork</li>
-                            <li class="flex items-center"><i class="fas fa-check-circle text-light-accent dark:text-dark-accent mr-2"></i> Learning Mindset</li>
-                        </ul>
+                    <p class="text-lg leading-relaxed">
+                        Alongside backend development, I have practical exposure to React for building frontend interfaces and connecting them with backend APIs, enabling me to contribute as a backend-focused full-stack developer.
+                    </p>
+                    <div class="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg border-l-4 border-light-accent dark:border-dark-accent mt-4">
+                        <h4 class="font-semibold mb-1">Career Goal</h4>
+                        <p class="text-sm">
+                            I enjoy problem-solving, writing maintainable code, and continuously improving my engineering skills. My long-term goal is to grow into a strong backend engineer capable of designing scalable systems and cloud-ready applications.
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Skills Section -->
-        <section id="skills" class="py-16 md:py-24">
+        <section id="skills" class="py-16 md:py-24 bg-light-bg dark:bg-dark-bg">
             <div class="text-center mb-12 reveal">
                 <h2 class="text-3xl md:text-4xl font-bold mb-4">My Skills</h2>
                 <div class="w-24 h-1 bg-light-accent dark:bg-dark-accent mx-auto"></div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
                 <!-- Backend -->
                 <div class="bg-light-card dark:bg-dark-card p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 border border-light-border dark:border-dark-border reveal">
-                    <h3 class="text-2xl font-semibold mb-4 text-center">Backend</h3>
-                    <div class="grid grid-cols-2 gap-4">
-                        <div class="flex flex-col items-center p-3 bg-light-bg dark:bg-dark-bg/50 rounded-lg">
-                            <i class="fab fa-python text-4xl mb-2 text-light-accent dark:text-dark-accent"></i>
-                            <span class="text-sm font-medium">Python</span>
-                        </div>
-                        <div class="flex flex-col items-center p-3 bg-light-bg dark:bg-dark-bg/50 rounded-lg">
-                            <i class="devicon-django-plain text-4xl mb-2 text-light-accent dark:text-dark-accent"></i>
-                            <span class="text-sm font-medium">Django</span>
-                        </div>
-                        <div class="flex flex-col items-center p-3 bg-light-bg dark:bg-dark-bg/50 rounded-lg">
-                            <i class="devicon-django-plain text-4xl mb-2 text-light-accent dark:text-dark-accent"></i>
-                            <span class="text-sm font-medium text-center">Django REST</span>
-                        </div>
-                        <div class="flex flex-col items-center p-3 bg-light-bg dark:bg-dark-bg/50 rounded-lg">
-                            <i class="devicon-fastapi-plain text-4xl mb-2 text-light-accent dark:text-dark-accent"></i>
-                            <span class="text-sm font-medium">FastAPI</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Databases -->
-                <div class="bg-light-card dark:bg-dark-card p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 border border-light-border dark:border-dark-border reveal" style="transition-delay: 100ms;">
-                    <h3 class="text-2xl font-semibold mb-4 text-center">Databases</h3>
-                    <div class="grid grid-cols-2 gap-4">
-                        <div class="flex flex-col items-center p-3 bg-light-bg dark:bg-dark-bg/50 rounded-lg">
-                            <i class="devicon-postgresql-plain text-4xl mb-2 text-light-accent dark:text-dark-accent"></i>
-                            <span class="text-sm font-medium">PostgreSQL</span>
-                        </div>
-                        <div class="flex flex-col items-center p-3 bg-light-bg dark:bg-dark-bg/50 rounded-lg">
-                            <i class="devicon-mysql-original text-4xl mb-2 text-light-accent dark:text-dark-accent"></i>
-                            <span class="text-sm font-medium">MySQL</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Tools & DevOps -->
-                <div class="bg-light-card dark:bg-dark-card p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 border border-light-border dark:border-dark-border reveal" style="transition-delay: 200ms;">
-                    <h3 class="text-2xl font-semibold mb-4 text-center">Tools & DevOps</h3>
-                    <div class="grid grid-cols-2 gap-4">
-                        <div class="flex flex-col items-center p-3 bg-light-bg dark:bg-dark-bg/50 rounded-lg">
-                            <i class="fab fa-git-alt text-4xl mb-2 text-light-accent dark:text-dark-accent"></i>
-                            <span class="text-sm font-medium">Git</span>
-                        </div>
-                        <div class="flex flex-col items-center p-3 bg-light-bg dark:bg-dark-bg/50 rounded-lg">
-                            <i class="fab fa-github text-4xl mb-2 text-light-accent dark:text-dark-accent"></i>
-                            <span class="text-sm font-medium">GitHub</span>
-                        </div>
-                        <div class="flex flex-col items-center p-3 bg-light-bg dark:bg-dark-bg/50 rounded-lg">
-                            <i class="fab fa-docker text-4xl mb-2 text-light-accent dark:text-dark-accent"></i>
-                            <span class="text-sm font-medium">Docker</span>
-                        </div>
-                        <div class="flex flex-col items-center p-3 bg-light-bg dark:bg-dark-bg/50 rounded-lg">
-                            <i class="fab fa-aws text-4xl mb-2 text-light-accent dark:text-dark-accent"></i>
-                            <span class="text-sm font-medium">AWS</span>
-                        </div>
-                    </div>
+                    <h3 class="text-xl font-semibold mb-4 flex items-center"><i class="fas fa-server mr-2 text-light-accent dark:text-dark-accent"></i> Backend Development</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center justify-between">
+                            <span>Python</span>
+                            <i class="fab fa-python text-2xl text-light-accent dark:text-dark-accent"></i>
+                        </li>
+                        <li class="flex items-center justify-between">
+                            <span>Django</span>
+                            <i class="devicon-django-plain text-2xl text-light-accent dark:text-dark-accent"></i>
+                        </li>
+                        <li class="flex items-center justify-between">
+                            <span>Django REST Framework</span>
+                            <i class="fas fa-cogs text-xl text-light-accent dark:text-dark-accent"></i>
+                        </li>
+                        <li class="flex items-center justify-between">
+                            <span>REST API Design</span>
+                            <i class="fas fa-network-wired text-xl text-light-accent dark:text-dark-accent"></i>
+                        </li>
+                        <li class="flex items-center justify-between">
+                            <span>WebSockets (Channels)</span>
+                            <i class="fas fa-bolt text-xl text-light-accent dark:text-dark-accent"></i>
+                        </li>
+                    </ul>
                 </div>
 
                 <!-- Frontend -->
-                <div class="bg-light-card dark:bg-dark-card p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 border border-light-border dark:border-dark-border reveal">
-                    <h3 class="text-2xl font-semibold mb-4 text-center">Frontend</h3>
-                    <div class="grid grid-cols-2 gap-4">
-                        <div class="flex flex-col items-center p-3 bg-light-bg dark:bg-dark-bg/50 rounded-lg">
-                            <i class="fab fa-html5 text-4xl mb-2 text-light-accent dark:text-dark-accent"></i>
-                            <span class="text-sm font-medium">HTML</span>
-                        </div>
-                        <div class="flex flex-col items-center p-3 bg-light-bg dark:bg-dark-bg/50 rounded-lg">
-                            <i class="fab fa-css3-alt text-4xl mb-2 text-light-accent dark:text-dark-accent"></i>
-                            <span class="text-sm font-medium">CSS</span>
-                        </div>
-                        <div class="flex flex-col items-center p-3 bg-light-bg dark:bg-dark-bg/50 rounded-lg">
-                            <i class="fab fa-js-square text-4xl mb-2 text-light-accent dark:text-dark-accent"></i>
-                            <span class="text-sm font-medium">JavaScript</span>
-                        </div>
-                        <div class="flex flex-col items-center p-3 bg-light-bg dark:bg-dark-bg/50 rounded-lg">
-                            <i class="fab fa-react text-4xl mb-2 text-light-accent dark:text-dark-accent"></i>
-                            <span class="text-sm font-medium">React</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Concepts -->
                 <div class="bg-light-card dark:bg-dark-card p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 border border-light-border dark:border-dark-border reveal" style="transition-delay: 100ms;">
-                    <h3 class="text-2xl font-semibold mb-4 text-center">Concepts</h3>
-                    <div class="grid grid-cols-2 gap-4">
-                        <div class="flex flex-col items-center p-3 bg-light-bg dark:bg-dark-bg/50 rounded-lg">
-                            <i class="fas fa-network-wired text-4xl mb-2 text-light-accent dark:text-dark-accent"></i>
-                            <span class="text-sm font-medium text-center">REST API</span>
-                        </div>
-                        <div class="flex flex-col items-center p-3 bg-light-bg dark:bg-dark-bg/50 rounded-lg">
-                            <i class="fas fa-lock text-4xl mb-2 text-light-accent dark:text-dark-accent"></i>
-                            <span class="text-sm font-medium">Auth</span>
-                        </div>
-                        <div class="flex flex-col items-center p-3 bg-light-bg dark:bg-dark-bg/50 rounded-lg">
-                            <i class="fas fa-database text-4xl mb-2 text-light-accent dark:text-dark-accent"></i>
-                            <span class="text-sm font-medium">ORM</span>
-                        </div>
-                        <div class="flex flex-col items-center p-3 bg-light-bg dark:bg-dark-bg/50 rounded-lg">
-                            <i class="fas fa-server text-4xl mb-2 text-light-accent dark:text-dark-accent"></i>
-                            <span class="text-sm font-medium">Deployment</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects" class="py-16 md:py-24">
-            <div class="text-center mb-12 reveal">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Projects</h2>
-                <div class="w-24 h-1 bg-light-accent dark:bg-dark-accent mx-auto"></div>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                
-                <!-- Project 1 -->
-                <div class="bg-light-card dark:bg-dark-card p-6 rounded-xl shadow-lg flex flex-col h-full border border-light-border dark:border-dark-border transform hover:-translate-y-2 transition-transform duration-300 reveal">
-                    <div class="flex-grow">
-                        <h3 class="text-2xl font-bold mb-3 text-light-accent dark:text-dark-accent">Razorpay Payment Integration System</h3>
-                        <p class="mb-4">Integrated a secure payment gateway using Django REST Framework to handle transactions, webhooks, and order management.</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-300 text-xs font-semibold px-2.5 py-0.5 rounded-full">Django REST Framework</span>
-                            <span class="bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-300 text-xs font-semibold px-2.5 py-0.5 rounded-full">Razorpay API</span>
-                            <span class="bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-300 text-xs font-semibold px-2.5 py-0.5 rounded-full">PostgreSQL</span>
-                        </div>
-                    </div>
-                    <div class="flex items-center space-x-4 mt-auto pt-4 border-t border-light-border dark:border-dark-border">
-                        <a href="https://github.com/jainroy" target="_blank" rel="noopener noreferrer" class="flex items-center hover:text-light-accent dark:hover:text-dark-accent transition-colors">
-                            <i class="fab fa-github mr-2"></i> GitHub
-                        </a>
-                        <span class="flex items-center text-gray-400 dark:text-gray-500 cursor-not-allowed">
-                            <i class="fas fa-external-link-alt mr-2"></i> Live Demo
-                        </span>
-                    </div>
+                    <h3 class="text-xl font-semibold mb-4 flex items-center"><i class="fas fa-laptop-code mr-2 text-light-accent dark:text-dark-accent"></i> Frontend</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center justify-between">
+                            <span>React.js</span>
+                            <i class="fab fa-react text-2xl text-light-accent dark:text-dark-accent"></i>
+                        </li>
+                        <li class="flex items-center justify-between">
+                            <span>HTML5 / CSS3 / JS</span>
+                            <div class="flex space-x-1 text-xl text-light-accent dark:text-dark-accent">
+                                <i class="fab fa-html5"></i><i class="fab fa-css3-alt"></i><i class="fab fa-js"></i>
+                            </div>
+                        </li>
+                        <li class="flex items-center justify-between">
+                            <span>Tailwind CSS</span>
+                            <i class="devicon-tailwindcss-original text-2xl text-light-accent dark:text-dark-accent"></i>
+                        </li>
+                        <li class="flex items-center justify-between">
+                            <span>Bootstrap</span>
+                            <i class="devicon-bootstrap-plain text-2xl text-light-accent dark:text-dark-accent"></i>
+                        </li>
+                    </ul>
                 </div>
 
-                <!-- Project 2 -->
-                <div class="bg-light-card dark:bg-dark-card p-6 rounded-xl shadow-lg flex flex-col h-full border border-light-border dark:border-dark-border transform hover:-translate-y-2 transition-transform duration-300 reveal" style="transition-delay: 100ms;">
-                    <div class="flex-grow">
-                        <h3 class="text-2xl font-bold mb-3 text-light-accent dark:text-dark-accent">Firebase Push Notification API</h3>
-                        <p class="mb-4">Sent real-time, targeted notifications from a Django backend to various client applications using the Firebase Admin SDK.</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-300 text-xs font-semibold px-2.5 py-0.5 rounded-full">Django</span>
-                            <span class="bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-300 text-xs font-semibold px-2.5 py-0.5 rounded-full">Firebase Admin SDK</span>
-                            <span class="bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-300 text-xs font-semibold px-2.5 py-0.5 rounded-full">Celery</span>
-                            <span class="bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-300 text-xs font-semibold px-2.5 py-0.5 rounded-full">Redis</span>
-                        </div>
-                    </div>
-                    <div class="flex items-center space-x-4 mt-auto pt-4 border-t border-light-border dark:border-dark-border">
-                        <a href="https://github.com/jainroy" target="_blank" rel="noopener noreferrer" class="flex items-center hover:text-light-accent dark:hover:text-dark-accent transition-colors">
-                            <i class="fab fa-github mr-2"></i> GitHub
-                        </a>
-                        <span class="flex items-center text-gray-400 dark:text-gray-500 cursor-not-allowed">
-                            <i class="fas fa-external-link-alt mr-2"></i> Live Demo
-                        </span>
+                <!-- Databases & Integrations -->
+                <div class="bg-light-card dark:bg-dark-card p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 border border-light-border dark:border-dark-border reveal" style="transition-delay: 200ms;">
+                    <h3 class="text-xl font-semibold mb-4 flex items-center"><i class="fas fa-database mr-2 text-light-accent dark:text-dark-accent"></i> Data & Integrations</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center justify-between">
+                            <span>PostgreSQL / MySQL</span>
+                            <i class="fas fa-database text-xl text-light-accent dark:text-dark-accent"></i>
+                        </li>
+                        <li class="flex items-center justify-between">
+                            <span>Razorpay (Payments)</span>
+                            <i class="fas fa-credit-card text-xl text-light-accent dark:text-dark-accent"></i>
+                        </li>
+                        <li class="flex items-center justify-between">
+                            <span>Firebase (Push Notif.)</span>
+                            <i class="devicon-firebase-plain text-2xl text-light-accent dark:text-dark-accent"></i>
+                        </li>
+                        <li class="flex items-center justify-between">
+                            <span>SendGrid (Email)</span>
+                            <i class="fas fa-envelope text-xl text-light-accent dark:text-dark-accent"></i>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Tools & Platforms -->
+                <div class="bg-light-card dark:bg-dark-card p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 border border-light-border dark:border-dark-border reveal">
+                    <h3 class="text-xl font-semibold mb-4 flex items-center"><i class="fas fa-tools mr-2 text-light-accent dark:text-dark-accent"></i> Tools & Platforms</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-light-bg dark:bg-dark-bg rounded-full text-sm font-medium border border-light-border dark:border-dark-border">Git & GitHub</span>
+                        <span class="px-3 py-1 bg-light-bg dark:bg-dark-bg rounded-full text-sm font-medium border border-light-border dark:border-dark-border">Postman</span>
+                        <span class="px-3 py-1 bg-light-bg dark:bg-dark-bg rounded-full text-sm font-medium border border-light-border dark:border-dark-border">Swagger</span>
+                        <span class="px-3 py-1 bg-light-bg dark:bg-dark-bg rounded-full text-sm font-medium border border-light-border dark:border-dark-border">Render</span>
+                        <span class="px-3 py-1 bg-light-bg dark:bg-dark-bg rounded-full text-sm font-medium border border-light-border dark:border-dark-border">AWS (Basic)</span>
+                        <span class="px-3 py-1 bg-light-bg dark:bg-dark-bg rounded-full text-sm font-medium border border-light-border dark:border-dark-border">Linux</span>
                     </div>
                 </div>
 
-                <!-- Project 3 -->
-                <div class="bg-light-card dark:bg-dark-card p-6 rounded-xl shadow-lg flex flex-col h-full border border-light-border dark:border-dark-border transform hover:-translate-y-2 transition-transform duration-300 reveal">
-                    <div class="flex-grow">
-                        <h3 class="text-2xl font-bold mb-3 text-light-accent dark:text-dark-accent">Feedback Management System</h3>
-                        <p class="mb-4">Designed APIs with DRF for a feedback platform, implementing JWT authentication for security and Swagger for API documentation.</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-300 text-xs font-semibold px-2.5 py-0.5 rounded-full">Django REST Framework</span>
-                            <span class="bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-300 text-xs font-semibold px-2.5 py-0.5 rounded-full">Simple JWT</span>
-                            <span class="bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-300 text-xs font-semibold px-2.5 py-0.5 rounded-full">Swagger</span>
-                        </div>
-                    </div>
-                    <div class="flex items-center space-x-4 mt-auto pt-4 border-t border-light-border dark:border-dark-border">
-                        <a href="https://github.com/jainroy" target="_blank" rel="noopener noreferrer" class="flex items-center hover:text-light-accent dark:hover:text-dark-accent transition-colors">
-                            <i class="fab fa-github mr-2"></i> GitHub
-                        </a>
-                        <span class="flex items-center text-gray-400 dark:text-gray-500 cursor-not-allowed">
-                            <i class="fas fa-external-link-alt mr-2"></i> Live Demo
-                        </span>
-                    </div>
-                </div>
-
-                <!-- Project 4 -->
-                <div class="bg-light-card dark:bg-dark-card p-6 rounded-xl shadow-lg flex flex-col h-full border border-light-border dark:border-dark-border transform hover:-translate-y-2 transition-transform duration-300 reveal" style="transition-delay: 100ms;">
-                    <div class="flex-grow">
-                        <h3 class="text-2xl font-bold mb-3 text-light-accent dark:text-dark-accent">Portfolio API Project</h3>
-                        <p class="mb-4">A personal Django REST API with user authentication and model-based endpoints to serve portfolio content dynamically.</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-300 text-xs font-semibold px-2.5 py-0.5 rounded-full">Django</span>
-                            <span class="bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-300 text-xs font-semibold px-2.5 py-0.5 rounded-full">DRF</span>
-                            <span class="bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-300 text-xs font-semibold px-2.5 py-0.5 rounded-full">PostgreSQL</span>
-                            <span class="bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-300 text-xs font-semibold px-2.5 py-0.5 rounded-full">JWT</span>
-                        </div>
-                    </div>
-                    <div class="flex items-center space-x-4 mt-auto pt-4 border-t border-light-border dark:border-dark-border">
-                        <a href="https://github.com/jainroy" target="_blank" rel="noopener noreferrer" class="flex items-center hover:text-light-accent dark:hover:text-dark-accent transition-colors">
-                            <i class="fab fa-github mr-2"></i> GitHub
-                        </a>
-                        <span class="flex items-center text-gray-400 dark:text-gray-500 cursor-not-allowed">
-                            <i class="fas fa-external-link-alt mr-2"></i> Live Demo
-                        </span>
+                 <!-- Soft Skills -->
+                 <div class="bg-light-card dark:bg-dark-card p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 border border-light-border dark:border-dark-border reveal md:col-span-2 lg:col-span-2">
+                    <h3 class="text-xl font-semibold mb-4 flex items-center"><i class="fas fa-users mr-2 text-light-accent dark:text-dark-accent"></i> Soft Skills</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                        <div class="flex items-center"><i class="fas fa-check-circle text-light-accent dark:text-dark-accent mr-2"></i> Problem-solving</div>
+                        <div class="flex items-center"><i class="fas fa-check-circle text-light-accent dark:text-dark-accent mr-2"></i> Debugging</div>
+                        <div class="flex items-center"><i class="fas fa-check-circle text-light-accent dark:text-dark-accent mr-2"></i> Team collaboration</div>
+                        <div class="flex items-center"><i class="fas fa-check-circle text-light-accent dark:text-dark-accent mr-2"></i> Adaptability</div>
                     </div>
                 </div>
 
@@ -415,26 +327,181 @@
                 <h2 class="text-3xl md:text-4xl font-bold mb-4">Experience</h2>
                 <div class="w-24 h-1 bg-light-accent dark:bg-dark-accent mx-auto"></div>
             </div>
-            <div class="relative border-l-2 border-light-accent dark:border-dark-accent ml-4 md:ml-8 reveal-left">
+            <div class="relative border-l-2 border-light-accent dark:border-dark-accent ml-4 md:ml-8 max-w-4xl mx-auto reveal-left">
                 <div class="mb-10 ml-8">
                     <span class="absolute flex items-center justify-center w-8 h-8 bg-light-accent rounded-full -left-4 ring-8 ring-light-card dark:ring-dark-card dark:bg-dark-accent">
                         <i class="fas fa-briefcase text-white"></i>
                     </span>
                     <h3 class="flex items-center mb-1 text-xl font-semibold flex-wrap">
-                        Python Developer (Onsite) <span class="text-light-accent dark:text-dark-accent mx-2 hidden sm:inline">•</span> <span class="block sm:inline w-full sm:w-auto">NthIndex Software Solutions</span>
+                        Python Developer Trainee <span class="text-light-accent dark:text-dark-accent mx-2 hidden sm:inline">•</span> <span class="block sm:inline w-full sm:w-auto">NthIndex Software Solutions LLP</span>
                     </h3>
-                    <time class="block mb-2 text-sm font-normal leading-none text-gray-500 dark:text-gray-400">2025 July - Present</time>
-                    <ul class="list-disc pl-5 mt-2 space-y-1">
-                        <li>Develop and maintain real-world Django applications for various clients.</li>
-                        <li>Build REST APIs using Django REST Framework and create Swagger documentation.</li>
-                        <li>Implement features like Razorpay payment integration, Firebase push notifications, and JWT authentication modules.</li>
-                        <li>Work with REST APIs, authentication, and database models using PostgreSQL.</li>
-                        <li>Collaborate with frontend developers to integrate APIs and troubleshoot issues.</li>
-                        <li>Participate in the deployment and maintenance of live projects.</li>
-                        <li>Contribute to clean code practices, version control (Git), and team collaboration.</li>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">Thrissur, Kerala</p>
+                    <time class="block mb-2 text-sm font-normal leading-none text-light-accent dark:text-dark-accent font-semibold">July 2024 - Present</time>
+                    <ul class="list-disc pl-5 mt-4 space-y-2 text-gray-700 dark:text-gray-300">
+                        <li>Developed <strong>REST APIs</strong> using Django REST Framework for real client modules.</li>
+                        <li>Implemented authentication, validations, file uploads, and CRUD workflows.</li>
+                        <li>Integrated <strong>Razorpay</strong> payment gateway and <strong>Firebase</strong> push notifications.</li>
+                        <li>Worked with PostgreSQL and optimized ORM-level queries.</li>
+                        <li>Used Git for version control and followed structured development workflows.</li>
+                        <li>Collaborated with frontend developers for API integration and bug fixing.</li>
                     </ul>
+                    <div class="mt-4 flex flex-wrap gap-2">
+                         <span class="px-2 py-1 bg-light-bg dark:bg-dark-bg rounded border border-light-border dark:border-dark-border text-xs">Python</span>
+                         <span class="px-2 py-1 bg-light-bg dark:bg-dark-bg rounded border border-light-border dark:border-dark-border text-xs">Django</span>
+                         <span class="px-2 py-1 bg-light-bg dark:bg-dark-bg rounded border border-light-border dark:border-dark-border text-xs">DRF</span>
+                         <span class="px-2 py-1 bg-light-bg dark:bg-dark-bg rounded border border-light-border dark:border-dark-border text-xs">PostgreSQL</span>
+                         <span class="px-2 py-1 bg-light-bg dark:bg-dark-bg rounded border border-light-border dark:border-dark-border text-xs">Firebase</span>
+                    </div>
                 </div>
             </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-16 md:py-24 bg-light-bg dark:bg-dark-bg">
+            <div class="text-center mb-12 reveal">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Projects</h2>
+                <div class="w-24 h-1 bg-light-accent dark:bg-dark-accent mx-auto"></div>
+            </div>
+            
+            <!-- 2. Backend / Training Projects -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-semibold mb-6 text-left border-l-4 border-light-accent dark:border-dark-accent pl-4 reveal">Backend & Training Projects</h3>
+                <p class="mb-4 text-gray-600 dark:text-gray-400 reveal">Projects developed during structured backend training and internship practice.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    
+                    <a href="https://github.com/jainroy/authenticationApp_nThIndex" target="_blank" rel="noopener noreferrer" class="group bg-light-card dark:bg-dark-card p-4 rounded-lg shadow border border-light-border dark:border-dark-border hover:border-light-accent dark:hover:border-dark-accent transition-all reveal">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h4 class="font-bold group-hover:text-light-accent dark:group-hover:text-dark-accent transition-colors">Authentication API</h4>
+                                <p class="text-xs text-gray-500 mt-1">JWT & Session Auth</p>
+                            </div>
+                            <i class="fab fa-github text-xl text-gray-400 group-hover:text-gray-800 dark:group-hover:text-white"></i>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/jainroy/firebaseApp_nThIndex" target="_blank" rel="noopener noreferrer" class="group bg-light-card dark:bg-dark-card p-4 rounded-lg shadow border border-light-border dark:border-dark-border hover:border-light-accent dark:hover:border-dark-accent transition-all reveal">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h4 class="font-bold group-hover:text-light-accent dark:group-hover:text-dark-accent transition-colors">Firebase Notification API</h4>
+                                <p class="text-xs text-gray-500 mt-1">Push Notifications via FCM</p>
+                            </div>
+                            <i class="fab fa-github text-xl text-gray-400 group-hover:text-gray-800 dark:group-hover:text-white"></i>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/jainroy/paymentApp_nThIndex" target="_blank" rel="noopener noreferrer" class="group bg-light-card dark:bg-dark-card p-4 rounded-lg shadow border border-light-border dark:border-dark-border hover:border-light-accent dark:hover:border-dark-accent transition-all reveal">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h4 class="font-bold group-hover:text-light-accent dark:group-hover:text-dark-accent transition-colors">Payment Integration</h4>
+                                <p class="text-xs text-gray-500 mt-1">Razorpay Gateway</p>
+                            </div>
+                            <i class="fab fa-github text-xl text-gray-400 group-hover:text-gray-800 dark:group-hover:text-white"></i>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/jainroy/websocketApp_nThIndex" target="_blank" rel="noopener noreferrer" class="group bg-light-card dark:bg-dark-card p-4 rounded-lg shadow border border-light-border dark:border-dark-border hover:border-light-accent dark:hover:border-dark-accent transition-all reveal">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h4 class="font-bold group-hover:text-light-accent dark:group-hover:text-dark-accent transition-colors">WebSocket App</h4>
+                                <p class="text-xs text-gray-500 mt-1">Real-time features with Channels</p>
+                            </div>
+                            <i class="fab fa-github text-xl text-gray-400 group-hover:text-gray-800 dark:group-hover:text-white"></i>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/jainroy/blogApp_nThIndex" target="_blank" rel="noopener noreferrer" class="group bg-light-card dark:bg-dark-card p-4 rounded-lg shadow border border-light-border dark:border-dark-border hover:border-light-accent dark:hover:border-dark-accent transition-all reveal">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h4 class="font-bold group-hover:text-light-accent dark:group-hover:text-dark-accent transition-colors">Blog API</h4>
+                                <p class="text-xs text-gray-500 mt-1">CRUD & Relations</p>
+                            </div>
+                            <i class="fab fa-github text-xl text-gray-400 group-hover:text-gray-800 dark:group-hover:text-white"></i>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/jainroy/incomeexpensesapiApp_nThIndex" target="_blank" rel="noopener noreferrer" class="group bg-light-card dark:bg-dark-card p-4 rounded-lg shadow border border-light-border dark:border-dark-border hover:border-light-accent dark:hover:border-dark-accent transition-all reveal">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h4 class="font-bold group-hover:text-light-accent dark:group-hover:text-dark-accent transition-colors">Expense Tracker API</h4>
+                                <p class="text-xs text-gray-500 mt-1">Financial Data Handling</p>
+                            </div>
+                            <i class="fab fa-github text-xl text-gray-400 group-hover:text-gray-800 dark:group-hover:text-white"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 1. Hosted Frontend Projects -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-semibold mb-6 text-left border-l-4 border-light-accent dark:border-dark-accent pl-4 reveal">Hosted Frontend Projects</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <!-- SmartSizer -->
+                    <div class="bg-light-card dark:bg-dark-card p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 border border-light-border dark:border-dark-border flex flex-col reveal">
+                        <h4 class="text-xl font-bold mb-2">SmartSizer</h4>
+                        <p class="text-sm text-gray-600 dark:text-gray-400 mb-3">Privacy-focused React app for resizing and compressing images/PDFs client-side.</p>
+                        <div class="flex flex-wrap gap-2 mb-4 mt-auto">
+                            <span class="text-xs bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-2 py-0.5 rounded">React</span>
+                            <span class="text-xs bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-2 py-0.5 rounded">TypeScript</span>
+                        </div>
+                        <div class="flex space-x-3 pt-4 border-t border-light-border dark:border-dark-border">
+                            <a href="https://jainroy.github.io/smartSizer_react" target="_blank" rel="noopener noreferrer" class="text-light-accent dark:text-dark-accent hover:underline text-sm"><i class="fas fa-external-link-alt mr-1"></i> Live Demo</a>
+                            <a href="https://github.com/jainroy/smartSizer_react" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 text-sm"><i class="fab fa-github mr-1"></i> Code</a>
+                        </div>
+                    </div>
+
+                    <!-- Image Gallery -->
+                    <div class="bg-light-card dark:bg-dark-card p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 border border-light-border dark:border-dark-border flex flex-col reveal" style="transition-delay: 100ms;">
+                        <h4 class="text-xl font-bold mb-2">Image Gallery App</h4>
+                        <p class="text-sm text-gray-600 dark:text-gray-400 mb-3">Simple responsive image gallery built using frontend fundamentals.</p>
+                        <div class="flex flex-wrap gap-2 mb-4 mt-auto">
+                            <span class="text-xs bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-2 py-0.5 rounded">HTML</span>
+                            <span class="text-xs bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-2 py-0.5 rounded">CSS</span>
+                        </div>
+                        <div class="flex space-x-3 pt-4 border-t border-light-border dark:border-dark-border">
+                            <a href="https://jainroy.github.io/imageGalleryApp_react" target="_blank" rel="noopener noreferrer" class="text-light-accent dark:text-dark-accent hover:underline text-sm"><i class="fas fa-external-link-alt mr-1"></i> Live Demo</a>
+                            <a href="https://github.com/jainroy/imageGalleryApp_react" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 text-sm"><i class="fab fa-github mr-1"></i> Code</a>
+                        </div>
+                    </div>
+
+                    <!-- Reminder App -->
+                    <div class="bg-light-card dark:bg-dark-card p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 border border-light-border dark:border-dark-border flex flex-col reveal" style="transition-delay: 200ms;">
+                        <h4 class="text-xl font-bold mb-2">Reminder App</h4>
+                        <p class="text-sm text-gray-600 dark:text-gray-400 mb-3">Basic reminder UI app demonstrating component structure and state handling.</p>
+                        <div class="flex flex-wrap gap-2 mb-4 mt-auto">
+                            <span class="text-xs bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-2 py-0.5 rounded">HTML</span>
+                            <span class="text-xs bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-2 py-0.5 rounded">CSS</span>
+                        </div>
+                        <div class="flex space-x-3 pt-4 border-t border-light-border dark:border-dark-border">
+                            <a href="https://jainroy.github.io/reminderApp_react" target="_blank" rel="noopener noreferrer" class="text-light-accent dark:text-dark-accent hover:underline text-sm"><i class="fas fa-external-link-alt mr-1"></i> Live Demo</a>
+                            <a href="https://github.com/jainroy/reminderApp_react" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 text-sm"><i class="fab fa-github mr-1"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. Academic Project -->
+            <div>
+                <h3 class="text-2xl font-semibold mb-6 text-left border-l-4 border-light-accent dark:border-dark-accent pl-4 reveal">Academic Project</h3>
+                <div class="bg-light-card dark:bg-dark-card p-6 rounded-xl shadow-lg border border-light-border dark:border-dark-border reveal">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between">
+                        <div>
+                            <h4 class="text-2xl font-bold text-light-accent dark:text-dark-accent mb-2">Renovation Platform</h4>
+                            <p class="text-sm font-semibold mb-1 uppercase tracking-wide text-gray-500">MCA Final Project</p>
+                            <p class="mb-4 max-w-2xl leading-relaxed">A web platform connecting users with home renovation and interior services. Features project booking, user dashboards, and basic cost estimation.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="px-2 py-1 bg-light-bg dark:bg-dark-bg rounded border border-light-border dark:border-dark-border text-xs">Django</span>
+                                <span class="px-2 py-1 bg-light-bg dark:bg-dark-bg rounded border border-light-border dark:border-dark-border text-xs">SQLite</span>
+                                <span class="px-2 py-1 bg-light-bg dark:bg-dark-bg rounded border border-light-border dark:border-dark-border text-xs">Bootstrap</span>
+                            </div>
+                        </div>
+                        <a href="https://github.com/jainroy/renovationApp" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-4 py-2 bg-light-bg dark:bg-dark-bg border border-light-border dark:border-dark-border rounded-lg hover:bg-gray-100 dark:hover:bg-slate-700 transition-colors mt-4 md:mt-0">
+                            <i class="fab fa-github mr-2"></i> View Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+
         </section>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-12 py-16">
@@ -449,18 +516,18 @@
                         <i class="fas fa-graduation-cap text-4xl text-light-accent dark:text-dark-accent mt-1"></i>
                         <div>
                             <h3 class="text-xl font-semibold">Master of Computer Applications (MCA)</h3>
-                            <p class="font-medium">University of Calicut</p>
-                            <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">2025</p>
-                            <p class="text-sm">Focused on advanced software engineering principles, database management, and system design.</p>
+                            <p class="font-medium">De Paul Institute of Science & Technology, Angamaly (MG University)</p>
+                            <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">2019 – 2023</p>
+                            <p class="text-sm">Completed with back papers cleared.</p>
                         </div>
                     </div>
                     <div class="flex items-start space-x-4 p-4 bg-light-card dark:bg-dark-card rounded-lg shadow-md border-l-4 border-light-accent dark:border-dark-accent reveal-left" style="transition-delay: 100ms;">
                         <i class="fas fa-graduation-cap text-4xl text-light-accent dark:text-dark-accent mt-1"></i>
                         <div>
-                            <h3 class="text-xl font-semibold">Bachelor of Science (B.Sc.) in Mathematics</h3>
-                            <p class="font-medium">University of Calicut</p>
-                            <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">2023</p>
-                            <p class="text-sm">My strong mathematical background helps me approach programming with logic and precision.</p>
+                            <h3 class="text-xl font-semibold">Bachelor of Science – Mathematics</h3>
+                            <p class="font-medium">St. Thomas College (Autonomous), Thrissur (Calicut University)</p>
+                            <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Graduated</p>
+                            <p class="text-sm">Strong mathematical foundation for logical reasoning.</p>
                         </div>
                     </div>
                 </div>
@@ -488,13 +555,6 @@
                         </div>
                     </div>
                     <div class="flex items-center bg-light-card dark:bg-dark-card p-4 rounded-lg shadow-md reveal-right" style="transition-delay: 200ms;">
-                        <i class="fas fa-certificate text-2xl text-light-accent dark:text-dark-accent mr-4 flex-shrink-0"></i>
-                        <div>
-                            <h4 class="font-semibold">AWS Cloud Practitioner Essentials</h4>
-                            <p class="text-sm text-gray-600 dark:text-gray-400">Amazon Web Services</p>
-                        </div>
-                    </div>
-                    <div class="flex items-center bg-light-card dark:bg-dark-card p-4 rounded-lg shadow-md reveal-right" style="transition-delay: 300ms;">
                         <i class="fas fa-certificate text-2xl text-light-accent dark:text-dark-accent mr-4 flex-shrink-0"></i>
                         <div>
                             <h4 class="font-semibold">Software Engineering Fundamentals</h4>
@@ -544,18 +604,18 @@
                     <form id="contact-form" class="space-y-6">
                         <div>
                             <label htmlFor="name" class="block text-sm font-medium mb-1">Your Name</label>
-                            <input type="text" id="name" name="name" required class="w-full px-3 py-2 bg-light-bg dark:bg-dark-bg/50 border border-light-border dark:border-dark-border rounded-md focus:outline-none focus:ring-2 focus:ring-light-accent dark:focus:ring-dark-accent transition-colors" />
+                            <input type="text" id="name" name="name" required class="w-full px-3 py-2 bg-light-bg dark:bg-dark-bg/50 border border-light-border dark:border-dark-border rounded-md focus:outline-none focus:ring-2 focus:ring-light-accent dark:focus:ring-dark-accent focus:ring-offset-2 focus:ring-offset-light-bg dark:focus:ring-offset-dark-bg transition-colors" />
                         </div>
                         <div>
                             <label htmlFor="email" class="block text-sm font-medium mb-1">Your Email</label>
-                            <input type="email" id="email" name="email" required class="w-full px-3 py-2 bg-light-bg dark:bg-dark-bg/50 border border-light-border dark:border-dark-border rounded-md focus:outline-none focus:ring-2 focus:ring-light-accent dark:focus:ring-dark-accent transition-colors" />
+                            <input type="email" id="email" name="email" required class="w-full px-3 py-2 bg-light-bg dark:bg-dark-bg/50 border border-light-border dark:border-dark-border rounded-md focus:outline-none focus:ring-2 focus:ring-light-accent dark:focus:ring-dark-accent focus:ring-offset-2 focus:ring-offset-light-bg dark:focus:ring-offset-dark-bg transition-colors" />
                         </div>
                         <div>
                             <label htmlFor="message" class="block text-sm font-medium mb-1">Message</label>
-                            <textarea id="message" name="message" rows="5" required class="w-full px-3 py-2 bg-light-bg dark:bg-dark-bg/50 border border-light-border dark:border-dark-border rounded-md focus:outline-none focus:ring-2 focus:ring-light-accent dark:focus:ring-dark-accent transition-colors"></textarea>
+                            <textarea id="message" name="message" rows="5" required class="w-full px-3 py-2 bg-light-bg dark:bg-dark-bg/50 border border-light-border dark:border-dark-border rounded-md focus:outline-none focus:ring-2 focus:ring-light-accent dark:focus:ring-dark-accent focus:ring-offset-2 focus:ring-offset-light-bg dark:focus:ring-offset-dark-bg transition-colors"></textarea>
                         </div>
                         <p id="form-error" class="text-red-500 text-sm text-center hidden">Failed to send message. Please try again later.</p>
-                        <button type="submit" id="submit-btn" class="w-full px-6 py-3 bg-light-accent text-white font-semibold rounded-lg shadow-md hover:bg-blue-600 dark:bg-dark-accent dark:hover:bg-blue-400 transition-colors duration-300 disabled:bg-gray-400 disabled:cursor-not-allowed">
+                        <button type="submit" id="submit-btn" class="w-full px-6 py-3 bg-light-accent text-white font-semibold rounded-lg shadow-md hover:bg-blue-600 dark:bg-dark-accent dark:hover:bg-blue-500 transition-colors duration-300 disabled:bg-gray-400 disabled:cursor-not-allowed">
                             Send Message
                         </button>
                     </form>
@@ -572,10 +632,10 @@
                 © <span id="year"></span> Jain Roy P. All Rights Reserved.
             </p>
             <div class="flex space-x-4">
-                <a href="https://github.com/jainroy" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-light-accent dark:hover:text-dark-accent transition-colors">
+                <a href="https://github.com/jainroy" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-light-accent dark:hover:text-dark-accent transition-colors" aria-label="GitHub Profile">
                     <i class="fab fa-github text-2xl"></i>
                 </a>
-                <a href="https://linkedin.com/in/jainroyp" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-light-accent dark:hover:text-dark-accent transition-colors">
+                <a href="https://linkedin.com/in/jainroyp" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-light-accent dark:hover:text-dark-accent transition-colors" aria-label="LinkedIn Profile">
                     <i class="fab fa-linkedin text-2xl"></i>
                 </a>
             </div>
@@ -635,6 +695,7 @@
                 menuIcon.classList.remove('fa-bars');
                 menuIcon.classList.add('fa-times');
             }
+            menuBtn.setAttribute('aria-expanded', !isHidden);
         });
 
         mobileLinks.forEach(link => {
@@ -642,6 +703,7 @@
                 mobileMenu.classList.add('hidden');
                 menuIcon.classList.remove('fa-times');
                 menuIcon.classList.add('fa-bars');
+                menuBtn.setAttribute('aria-expanded', 'false');
             });
         });
 
